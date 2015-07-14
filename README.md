@@ -48,13 +48,12 @@ separate shared libraries but some compile/link error may occur(we have not conf
 
 How to use
 =========
-See sample project and/or our web site(but sorry web site is Japanese only).
-These sample projects are Eclipse project. Please import using Eclipse.
+These sample projects are Eclipse project. Please import using Eclipse. I will be porting Android Studio projects soon.
 This library works on at least Android 3.1 or later(API >= 12), but Android 4.0(API >= 14)
 or later is better. USB host function must be required.
 If you want to try on Android 3.1, you will need some modification(need to remove 
 setPreviewTexture method in UVCCamera.java etc.), but we have not confirm whether the sample
-project run on Android 3.1 yet.
+project run on Android 3.1 yet. Make sure to change [this line](https://github.com/nmcdonaldd/UVCCamera/blob/master/libUVCCamera/jni/UVCCamera/serenegiant_usb_UVCCamera.cpp#L223) & [this line](https://github.com/nmcdonaldd/UVCCamera/blob/master/libUVCCamera/jni/UVCCamera/serenegiant_usb_UVCCamera.cpp#L231) to match your project structure.
 Some sample projects need API>=18 though.
 
 ###2014/07/25
